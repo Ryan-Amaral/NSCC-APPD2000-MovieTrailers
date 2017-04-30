@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.w0279488.ryan.movietrailers.TrailerAddActivity">
+
+    <TextView
+        android:id="@+id/txtVwAddTrailer"
+        android:text="@string/str_add_trailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edtTxtYoutubeId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVwAddTrailer"
+        android:layout_marginTop="10dp"
+        android:hint="@string/str_youtube_id"/>
+
+    <Button
+        android:id="@+id/btnTestYoutube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTxtYoutubeId"
+        android:text="@string/str_test"/>
+
+    <EditText
+        android:id="@+id/edtTxtMovieName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTestYoutube"
+        android:layout_marginTop="10dp"
+        android:hint="@string/str_movie_name"
+        android:maxLines="3"/>
+
+    <EditText
+        android:id="@+id/edtTxtMovieDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTxtMovieName"
+        android:layout_marginTop="10dp"
+        android:hint="@string/str_movie_description"
+        android:maxLines="8" />
+
+    <Button
+        android:id="@+id/btnActualAddTrailer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/str_add_trailer"/>
+
+</RelativeLayout>

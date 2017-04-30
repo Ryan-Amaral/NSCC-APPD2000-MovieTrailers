@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.w0279488.ryan.movietrailers.TrailerPreviewFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_trailers"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:textSize="50sp"
+        android:id="@+id/txtVwLblTrailers"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtVwLblTrailers"
+        android:layout_above="@+id/btnAddTrailer"/>
+
+    <TextView android:id="@+id/txtVwEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/str_no_trailers"
+        android:visibility="gone"/>
+
+</RelativeLayout>

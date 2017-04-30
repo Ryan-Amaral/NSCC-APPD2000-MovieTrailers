@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVwMovieName"
+        android:layout_toRightOf="@+id/imgVwMovieThumbnail"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:maxLines="2"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVwMovieDescription"
+        android:maxLines="3"
+        android:layout_toRightOf="@+id/imgVwMovieThumbnail"
+        android:layout_below="@+id/txtVwMovieName"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgVwMovieThumbnail"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentTop="true"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtngBrMovieTrailerRating"
+        android:layout_below="@+id/imgVwMovieThumbnail"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:rating="-1"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:isIndicator="true"/>
+
+</RelativeLayout>

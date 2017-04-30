@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    tools:context="com.w0279488.ryan.movietrailers.TrailerViewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <fragment class="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                android:id="@+id/my_youtube_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtVwMovieName"
+                android:layout_below="@+id/my_youtube_fragment"
+                android:layout_marginTop="5dp"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rtngBrMovieTrailerRating"
+                android:layout_below="@+id/txtVwMovieName"
+                android:layout_alignParentLeft="true"
+                android:numStars="5"
+                android:rating="-1"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:isIndicator="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtVwMovieDescription"
+                android:layout_below="@+id/rtngBrMovieTrailerRating"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBack"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/txtVwMovieDescription"
+                android:layout_alignParentLeft="true"
+                android:text="@string/str_back"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDeleteTrailer"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/str_remove_trailer"
+                android:background="#FF0000"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
